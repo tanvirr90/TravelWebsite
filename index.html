@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL Singapore</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+.locations{
+  position: relative;
+  left:40px;
+}
+</style>
+<body>
+
+
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="/login" method="post">
+        <h3>Login</h3>
+        <input type="email" class="box" name="uname" placeholder="Enter your Email">
+        <input type="password" class="box" name="pass" placeholder="Enter your Password">
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>dicover new places with us, adventure awaits</p>
+        <a href="#packages" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+
+        <form action="/" method="post">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" value="Singapore">
+            </div>
+            <div class="inputBox">
+                <h3>How many Guests</h3>
+                <input type="number" placeholder="Number of guests" required>
+            </div>
+            <div class="inputBox">
+                <h3>Number of Days of Visit</h3>
+                <input type="number" name="days" required min="3" max="6">
+            </div>
+            <div class="inputBox suggestions">
+                <p class="check1">Architecture</p><input class="check" type="checkbox" name="boxes[]" value="Architecture"></input>
+                <p class="check1">Monuments</p><input class="check" type="checkbox" name="boxes[]" value="Monuments"></input>
+                <p class="check1">Parks</p><input class="check" type="checkbox" name="boxes[]" value="Parks"></input>
+                <p class="check1">Restaurants</p><input class="check" type="checkbox" name="boxes[]" value="Restaurants"></input>
+                <p class="check1">Scenary</p><input class="check" type="checkbox" name="boxes[]" value="Scenary"></input>
+            </div>
+            <input type="submit" class="bookbtn btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/97/54/a5/r65-memories-at-time.jpg?w=1000&h=-1&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Singapore Flyer </h3>
+                <p>The Singapore Flyer is an observation wheel at the Downtown Core district of Singapore. Officially opened on 15 April 2008, it has 28 air-conditioned capsules, each able to accommodate 28 passengers, and incorporates a three-story terminal building.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/d7/53/1f/caption.jpg?w=1000&h=800&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Marina Bay </h3>
+                <p>Marina Bay Sands (abbreviation: MBS) is an integrated resort fronting Marina Bay in Singapore. The resort is owned by the Las Vegas Sands Corporation and at its opening in 2010, it was deemed the world's most expensive standalone casino property.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/4d/a7/97/photo2jpg.jpg?w=1000&h=800&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Merlion Park </h3>
+                <p>The Merlion (/ˈmɜːrˌlaɪən/) is the official mascot of Singapore. It is depicted as a mythical creature with the head of a lion and the body of a fish. Being of prominent symbolic nature to Singapore and Singaporeans in general, it is widely used to represent both the city state and its people in sports teams, advertising, branding, tourism and as a national personification</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/15/64/20/photo0jpg.jpg?w=1000&h=-1&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Sands Skypark Observation Deck</h3>
+                <p>Hotel's observation deck on the 57th floor offering panoramic city views & 2 upscale restaurants.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/0b/76/4c/mal-singapore11-059-largejpg.jpg?w=1000&h=-1&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Jurong Bird Park </h3>
+                <p>Jurong Bird Park is an aviary and tourist attraction in Jurong, Singapore. The largest such bird park in Asia,it covers an area of 0.2 square kilometres (49 acres) on the western slope of Jurong Hill, the highest point in the Jurong region.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/45/9d/0f/national-museum-of-singapore.jpg?w=1000&h=800&s=1" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Sultan Mosque</h3>
+                <p>Sultan Mosque or Masjid Sultan is a mosque located at Muscat Street and North Bridge Road within the Kampong Glam precinct of the district of Rochor in Singapore</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Custom options</h3>
+            <p>Choose from a wide range of tourist places with category selections.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Excellent Review</h3>
+            <p>Learn more from the reviews given by our previous clients.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safty guide</h3>
+            <p>Download a safety guide customizes by us to ensure maximum safety.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Check out the place</h3>
+            <p>Using Google API, view the streets of Singapore</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Expenses</h3>
+            <p>Track your expenses of tourist places visits</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>Learn more about the tourist places</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>To enter Singapore is to enter a world of architectural wonders and culinary delights where lush greenery and Eco-Friendly malls coexist in confidence.</p>
+                <!-- <a href="#" class="btn">see more</a> -->
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Ansh patel</h3>
+                    <p>This website helped me a lot while i was travelling to singapore and it made my trip shorted.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>Satwik Patil</h3>
+                    <p>The website gave m suggestion of the place according to my intrested and helped a lot by giving goof places suggestions</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>Jaydeep Singh</h3>
+                    <p>The website is very user friendly.It was very easy to use.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>Spandan Kumar</h3>
+                    <p>The trip was made easy and enjoyable by great suggestion of places by this webiste.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="/review" method="post">
+            <div class="inputBox">
+                <input type="text" id="uname" placeholder="Name" name="name" required>
+                <input id="uemail"type="email" placeholder="Email" required>
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea placeholder="Message" name="message" id="" cols="30" rows="10" required></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+          <h3>about us</h3>
+          <p>Your Trip, Our Responsibility.We are the first metasearch engine for tours & travel activities. Our search allows users to compare tours & travel activities' prices in just a few clicks from hundreds of providers. Simply enter where you want to go, and let our search engine compare prices for you.</p>
+      </div>
+        <div class="box locations">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> TRAVEL </span> | all rights reserved! </h1>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+
+const uname = document.getElementById('uname').value;
+const uemail = document.getElementById('uemail').value;
+var regex1 = /^([a-zA-Z0-9]+)$/;
+var regex2 = /^([a-z]+)([0-9]+)@([a-z]+).com$/;
+
+if(!regex1.test(uname)){
+  alert("Invalid Name");
+}
+if(!regex2.test(uemail)){
+  alert("Wrong Email format");
+}
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form-container');
+let formClose = document.querySelector('#form-close');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+let videoBtn = document.querySelectorAll('.vid-btn');
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+});
+
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+});
+
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+});
+
+videoBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src;
+    });
+});
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".brand-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        450: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+});
+</script>
+
+
+<!-- custom js file link  -->
+
+</body>
+</html>

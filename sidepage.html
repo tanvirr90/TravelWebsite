@@ -1,0 +1,151 @@
+<html>
+<head>
+  <title>Suggestions</title>
+  <link rel="stylesheet" href="./sidepage.css">
+</head>
+<body>
+  <header>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+          <a class="things">Things to do</a>
+      </nav>
+
+      <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search here..."></input>
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+  </header>
+
+
+  <section class="packages" id="packages">
+  <div class="box-container">
+  <div class="box">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/97/54/a5/r65-memories-at-time.jpg?w=1000&h=-1&s=1" alt="">
+      <div class="content">
+          <h3 id="#1"> <i class="fas fa-map-marker-alt"></i> Singapore Flyer </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> $90.00 <span>$120.00</span> </div>
+          <a href="#" class="btn">Book now</a>
+      </div>
+  </div>
+  <div class="box">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/d7/53/1f/caption.jpg?w=1000&h=800&s=1" alt="">
+      <div class="content">
+          <h3 id="#2"> <i class="fas fa-map-marker-alt"></i>Marina Bay </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> $90.00 <span>$120.00</span> </div>
+          <a href="#" class="btn">Book now</a>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/4d/a7/97/photo2jpg.jpg?w=1000&h=800&s=1" alt="">
+      <div class="content">
+          <h3 id="#3"> <i class="fas fa-map-marker-alt"></i> Merlion Park </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> $90.00 <span>$120.00</span> </div>
+          <a href="#" class="btn">Book now</a>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/15/64/20/photo0jpg.jpg?w=1000&h=-1&s=1" alt="">
+      <div class="content">
+          <h3 id="#4"> <i class="fas fa-map-marker-alt"></i> Clarke Quay </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> $90.00 <span>$120.00</span> </div>
+          <a href="#" class="btn">Book now</a>
+      </div>
+  </div>
+
+
+</div>
+</section>
+<div id="map"></div>
+<script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSUiOPc3Ry2WX1KEsbDPttWaF0guRf9Q&callback=initMap">
+</script>
+
+<script>
+const datatravel = [
+  { id: 1,
+  name:"Marina Bay Sands",
+  description:"Marina Bay Sands (abbreviation: MBS) is an integrated resort fronting Marina Bay in Singapore. The resort is owned by the Las Vegas Sands Corporation and at its opening in 2010, it was deemed the world's most expensive standalone casino property.",
+  lat:1.2838, lon:103.8591, category:"Park"
+  },
+  { id: 2,
+  name:"Merlion",
+  description:"The Merlion (/ˈmɜːrˌlaɪən/) is the official mascot of Singapore. It is depicted as a mythical creature with the head of a lion and the body of a fish. Being of prominent symbolic nature to Singapore and Singaporeans in general, it is widely used to represent both the city state and its people in sports teams, advertising, branding, tourism and as a national personification.",
+  lat:1.2868, lon:103.8545, category:"Monument"
+  },
+  { id: 3,
+  name:"Jurong Bird Park",
+  description:"Jurong Bird Park is an aviary and tourist attraction in Jurong, Singapore. The largest such bird park in Asia,[3] it covers an area of 0.2 square kilometres (49 acres) on the western slope of Jurong Hill, the highest point in the Jurong region. ",
+  lat:1.3187, lon:103.7064, category:"Park"
+  },
+  { id: 4,
+  name:"Singapore Flyer",
+  description:"The Singapore Flyer is an observation wheel at the Downtown Core district of Singapore. Officially opened on 15 April 2008, it has 28 air-conditioned capsules, each able to accommodate 28 passengers, and incorporates a three-story terminal building.",
+  lat:1.2893, lon:103.8631, category:"Scenary"
+  }
+  ]
+
+  document.getElementById('#1').innerHTML = datatravel[0].name;
+  document.getElementById('#2').innerHTML = datatravel[1].name;
+  document.getElementById('#3').innerHTML = datatravel[2].name;
+  document.getElementById('#4').innerHTML = datatravel[3].name;
+</script>
+<script>
+
+    function initMap() {
+        var options = {
+            zoom: 10,
+            center: { lat: 33.933241, lng: -84.340288 }
+        }
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        var marker = new google.maps.Marker({
+            position: { lat: 33.933241, lng: -84.340288 },
+            map: map
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<html>
+<head>
+  <title>Suggestions</title>
+  <link rel="stylesheet" href="./sidepage.css">
+</head>
+<style>
+.Expense{
+  width:780px;
+  height:70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  top:50px;
+  left:240px;
+}
+.exp1{
+  position: absolute;
+  top:344%;
+  left:20%;
+}
+.exp2{
+  position: absolute;
+  top:344%;
+  left:30%;
+}
+.exp3{
+  position: absolute;
+  top:344%;
+  left:40%;
+}
+.exp4{
+  position: absolute;
+  top:344%;
+  left:50%;
+}
+.exp5{
+  position: absolute;
+  top:344%;
+  left:60%;
+}
+.total{
+  position: absolute;
+  top:344%;
+  left:70%;
+}
+.subbtn{
+  margin-top:50px;
+  width:200px;
+  height:40px;
+  border-radius: 10px;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+}
+</style>
+<body>
+  <header>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+          <a class="things">Things to do</a>
+      </nav>
+
+      <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search here..."></input>
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+  </header>
+
+
+  <section class="packages" id="packages">
+  <div class="box-container">
+  <div class="box">
+      <img src= <%= src1 %> alt="">
+      <div class="content">
+          <h3 id="#1"> <i class="fas fa-map-marker-alt"></i><%= var1 %></h3>
+          <p><%= desc1 %></p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> <%= price1 %> <span>$120.00</span> </div>
+          <a id="box1handle" href="#" class="btn">View</a>
+      </div>
+  </div>
+  <div class="box">
+      <img src= <%= src2 %> alt="">
+      <div class="content">
+          <h3 id="#2"> <i class="fas fa-map-marker-alt"></i> <%= var2 %> </h3>
+          <p><%= desc2 %></p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> <%= price2 %> <span>$120.00</span> </div>
+          <a id="box2handle" href="#" class="btn">View</a>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src= <%= src3 %> alt="">
+      <div class="content">
+          <h3 id="#3"> <i class="fas fa-map-marker-alt"></i> <%= var3 %> </h3>
+          <p><%= desc3 %></p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> <%= price3 %> <span>$120.00</span> </div>
+          <a id="box3handle" href="#" class="btn">View</a>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src= <%= src4 %> alt="">
+      <div class="content">
+          <h3 id="#4"> <i class="fas fa-map-marker-alt"></i><%= var4 %></h3>
+          <p><%= desc4 %></p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> <%= price4 %> <span>$120.00</span> </div>
+          <a id="box4handle" href="#" class="btn">View</a>
+      </div>
+  </div>
+
+  <div class="box">
+      <img src= <%= src5 %> alt="">
+      <div class="content">
+          <h3 id="#5"> <i class="fas fa-map-marker-alt"></i><%= var5 %></h3>
+          <p><%= desc5 %></p>
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+          </div>
+          <div class="price"> <%= price5 %> <span>$120.00</span> </div>
+          <a id="box5handle" href="#" class="btn">View</a>
+      </div>
+  </div>
+
+</div>
+</section>
+<div id="map"></div>
+<br><br><br><br><br>
+
+<center><h6 class="expensehead">Total Expense</h6></center>
+<div class="Expense">
+</div>
+  <h6 class="exp1"><%= price1 %> + </h6>&nbsp;
+  <h6 class="exp2"><%= price2 %> + </h6>&nbsp;
+  <h6 class="exp3"><%= price3 %> + </h6>&nbsp;
+  <h6 class="exp4"><%= price4 %> + </h6>&nbsp;
+  <h6 class="exp5"><%= price5 %> = </h6>&nbsp;
+  <h6 class="total"><%= total %></h6>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="download">
+    <center><h6 class="downloadhead">Safety Guide</center>
+    <form action="/download" method="post">
+    <center><button class="subbtn" type="submit">Download</button></center>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+
+<section class="footer">
+
+    <div class="box-container">
+
+      <div class="box">
+          <h3>about us</h3>
+          <p>Your Trip, Our Responsibility.We are the first metasearch engine for tours & travel activities. Our search allows users to compare tours & travel activities' prices in just a few clicks from hundreds of providers. Simply enter where you want to go, and let our search engine compare prices for you.</p>
+      </div>
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+    </div>
+
+    <h1 class="credit"> created by <span> TRAVEL </span> | all rights reserved! </h1>
+
+</section>
+
+<script defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgADBkQsU8ik8mgGeG3OaShhtdhH1-tZs&callback=initMap">
+</script>
+
+<script>
+
+    function initMap() {
+        var options = {
+            zoom: 15,
+            center: { lat: <%= lat1 %>, lng: <%= lon1 %> }
+        }
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        var marker = new google.maps.Marker({
+            position: { lat: <%= lat1 %>, lng: <%= lon1 %> },
+            map: map
+        });
+        google.maps.event.addDomListener(document.getElementById('box1handle'), 'click', function () {
+        map.setCenter(new google.maps.LatLng(<%= lat1 %>,<%= lon1 %>));
+        });
+        google.maps.event.addDomListener(document.getElementById('box2handle'), 'click', function () {
+        map.setCenter(new google.maps.LatLng(<%= lat2 %>,<%= lon2 %>));
+        });
+        google.maps.event.addDomListener(document.getElementById('box3handle'), 'click', function () {
+        map.setCenter(new google.maps.LatLng(<%= lat3 %>,<%= lon3 %>));
+        });
+        google.maps.event.addDomListener(document.getElementById('box4handle'), 'click', function () {
+        map.setCenter(new google.maps.LatLng(<%= lat4 %>,<%= lon4 %>));
+        });
+        google.maps.event.addDomListener(document.getElementById('box5handle'), 'click', function () {
+        map.setCenter(new google.maps.LatLng(<%= lat5 %>,<%= lon5 %>));
+        });
+    }
+</script>
+</body>
+</html>
